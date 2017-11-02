@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <include layout="@layout/layout_title_bar_newer" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_first"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_time"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:layout_width="360dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_traintime"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="2dp"
+                    android:text="训练次数:"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/tv_training_time"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="2dp"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/param_level2_font_size" />
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="225dp"
+                    android:layout_marginTop="2dp"
+                    android:text="次"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/param_level2_font_size" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/rl_second"
+                android:layout_width="606dp"
+                android:layout_height="458dp"
+                android:layout_below="@id/rl_first"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_groupdevide"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:text="姓名"
+                        android:textSize="28sp" />
+
+                    <EditText
+                        android:id="@+id/athlete_name"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/ll_edittext_item_normal" />
+
+                    <TextView
+                        android:layout_width="120sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="编号"
+                        android:textSize="28sp" />
+
+                    <EditText
+                        android:id="@+id/athlete_num"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/ll_edittext_item_normal" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:text="训练分组"
+                        android:textSize="28sp" />
+
+
+                    <Spinner
+                        android:id="@+id/shot_training_angle"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/spinner" />
+
+
+                    <TextView
+                        android:layout_width="120sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center"
+                        android:text="训练重量"
+                        android:textSize="28sp" />
+
+
+                    <EditText
+                        android:id="@+id/sp_training_weight"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/ll_edittext_item_normal">
+
+                    </EditText>
+                    <TextView
+                    android:layout_width="40sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="KG"
+                    android:textSize="28sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/grey" />
+                <RelativeLayout
+                    android:id="@+id/relativeLayout8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="训练轮次"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="270dp"
+                        android:text="推力"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="490dp"
+                        android:text="总时间"
+                        android:textSize="25sp" />
+                </RelativeLayout>
+                <ListView
+                    android:id="@+id/lv_thrust"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none"></ListView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:text="组别"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="140dp"
+                        android:text="设备"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="170dp"
+                        android:text="备注"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/rl_third"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/rl_second"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_downtime"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_total_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="总时间:00:00:00"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_begin"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="70dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/img_situpbegin" />
+
+                    <Button
+                        android:id="@+id/btn_stop"
+                        android:layout_width="160dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="70dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/img_situpstop" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:background="@drawable/bg_score">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/relativeLayout2"
+                android:layout_width="250dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_scoretitle">
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_result"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="70dp"-->
+                <!--android:layout_marginTop="2dp"-->
+                <!--android:text="训练结果"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="25sp" />-->
+
+
+                <Button
+                    android:id="@+id/btn_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="62dp"
+                    android:layout_marginRight="62dp"
+                    android:background="#00000000"
+                    android:text="训练结果"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="290dp"-->
+                <!--android:layout_marginTop="2dp"-->
+                <!--android:text="历史成绩"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="25sp" />-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:id="@+id/relativeLayout7"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="训练轮次"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:text="速度"
+                    android:textSize="25sp" />
+
+            </RelativeLayout>
+
+            <ListView
+
+                android:id="@+id/lv_speed"
+                android:layout_width="match_parent"
+                android:layout_height="510dp"
+                android:divider="#00000000"
+                android:fadeScrollbars="true"
+                android:scrollbarSize="7dp"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbarThumbVertical="@drawable/listview_scrollbar_thumb"
+                android:scrollbarTrackVertical="@drawable/listview_scrollbar_track"
+                android:scrollbars="vertical"
+                android:verticalScrollbarPosition="right"
+                android:layout_alignBottom="@+id/relativeLayout3"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+
+            </ListView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <include layout="@layout/layout_title_bar_newer" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <include layout="@layout/layout_title_bar_newer" />
+    </LinearLayout>
+
+</LinearLayout>
